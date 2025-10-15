@@ -8,7 +8,7 @@
         <artifactId>tests</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    
+
     <artifactId>skip-start-server-it</artifactId>
     <!-- Create Liberty profile server assembly -->
     <packaging>liberty-assembly</packaging>
@@ -33,6 +33,11 @@
                 <configuration>
                     <skipTestServer>true</skipTestServer>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
             </plugin>
         </plugins>
     </build>

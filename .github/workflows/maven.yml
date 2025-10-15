@@ -23,7 +23,7 @@ jobs:
         # test against latest update of each major Java version, as well as specific updates of LTS versions:
         RUNTIME: [ol, wlp]
         RUNTIME_VERSION: [25.0.0.6]
-        java: [21, 17, 11, 8]
+        java: [21, 17]
         exclude:
         - java: 8
           RUNTIME: wlp
@@ -58,7 +58,7 @@ jobs:
     - name: Set up Maven
       uses: stCarolas/setup-maven@v4.5
       with:
-        maven-version: 3.9.9
+        maven-version: 4.0.0-rc-4
     # Install dependencies
     - name: Install ci.ant and ci.common
       run: |
@@ -81,7 +81,7 @@ jobs:
         # test against latest update of each major Java version, as well as specific updates of LTS versions:
         RUNTIME: [ol, wlp]
         RUNTIME_VERSION: [25.0.0.6]
-        java: [21, 17, 11, 8]
+        java: [21, 17]
         exclude:
         - java: 8
           RUNTIME: ol
@@ -107,7 +107,7 @@ jobs:
     - name: Set up Maven
       uses: stCarolas/setup-maven@v4.5
       with:
-        maven-version: 3.9.9
+        maven-version: 4.0.0-rc-4
     # Install ci.ant
     - name: Install ci.ant
       working-directory: ${{github.workspace}}/ci.ant

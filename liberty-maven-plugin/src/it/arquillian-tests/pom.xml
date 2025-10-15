@@ -11,7 +11,6 @@
         <groupId>io.openliberty.tools.it</groupId>
         <artifactId>tests</artifactId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../tests</relativePath>
     </parent>
 
     <pluginRepositories>
@@ -91,12 +90,7 @@
     </dependencyManagement>
 
     <dependencies>
-        <dependency>
-            <groupId>io.openliberty.arquillian</groupId>
-            <artifactId>${arquillian.container.type}</artifactId>
-            <version>${arquillian.container.version}</version>
-            <scope>test</scope>
-        </dependency>
+
         <dependency>
             <groupId>javax.enterprise</groupId>
             <artifactId>cdi-api</artifactId>
@@ -351,6 +345,14 @@
                     <arquillian.container.type>${arquillian.managed.artifact}</arquillian.container.type>
                     <arquillian.container.version>${arquillian.managed.version}</arquillian.container.version>
                 </properties>
+                <dependencies>
+                    <dependency>
+                        <groupId>io.openliberty.arquillian</groupId>
+                        <artifactId>${arquillian.container.type}</artifactId>
+                        <version>${arquillian.container.version}</version>
+                        <scope>test</scope>
+                    </dependency>
+                </dependencies>
             </profile>
             <profile>
                 <!-- Should use the XML generated from the configure-arquillian goal -->
@@ -365,6 +367,14 @@
                     <arquillian.container.type>${arquillian.managed.artifact}</arquillian.container.type>
                     <arquillian.container.version>${arquillian.managed.version}</arquillian.container.version>
                 </properties>
+                <dependencies>
+                    <dependency>
+                        <groupId>io.openliberty.arquillian</groupId>
+                        <artifactId>${arquillian.container.type}</artifactId>
+                        <version>${arquillian.container.version}</version>
+                        <scope>test</scope>
+                    </dependency>
+                </dependencies>
                 <build>
                     <plugins>
                         <plugin>
@@ -392,6 +402,14 @@
                     <arquillian.container.type>${arquillian.managed.artifact}</arquillian.container.type>
                     <arquillian.container.version>${arquillian.managed.version}</arquillian.container.version>
                 </properties>
+                <dependencies>
+                    <dependency>
+                        <groupId>io.openliberty.arquillian</groupId>
+                        <artifactId>${arquillian.container.type}</artifactId>
+                        <version>${arquillian.container.version}</version>
+                        <scope>test</scope>
+                    </dependency>
+                </dependencies>
             </profile>
             <profile>
                 <!-- Should use the arquillian.xml in src/test/resources -->
@@ -406,6 +424,14 @@
                     <arquillian.container.type>${arquillian.remote.artifact}</arquillian.container.type>
                     <arquillian.container.version>${arquillian.remote.version}</arquillian.container.version>
                 </properties>
+                <dependencies>
+                    <dependency>
+                        <groupId>io.openliberty.arquillian</groupId>
+                        <artifactId>${arquillian.container.type}</artifactId>
+                        <version>${arquillian.container.version}</version>
+                        <scope>test</scope>
+                    </dependency>
+                </dependencies>
             </profile>
             <profile>
                 <!-- Should use the XML generated from the configure-arquillian goal -->
@@ -420,6 +446,14 @@
                     <arquillian.container.type>${arquillian.remote.artifact}</arquillian.container.type>
                     <arquillian.container.version>${arquillian.remote.version}</arquillian.container.version>
                 </properties>
+                <dependencies>
+                    <dependency>
+                        <groupId>io.openliberty.arquillian</groupId>
+                        <artifactId>${arquillian.container.type}</artifactId>
+                        <version>${arquillian.container.version}</version>
+                        <scope>test</scope>
+                    </dependency>
+                </dependencies>
             </profile>
             <profile>
                 <!-- Java 11 dependencies -->
